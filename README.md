@@ -1,4 +1,4 @@
-# Pokemon website throgh APIs
+# Pokemon website through APIs
 
 ## Components list:
 
