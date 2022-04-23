@@ -22,10 +22,10 @@ class SimplePokemonCard extends Component {
       <img class="pokemonCard" src=${pokemonImage}>
         <ul>
           <li>ID: ${this.id}</li>
-         <li>Name: ${capitalisedName}</li>
-         <li>Type: ${pokemonType}</li>
+          <li>Name: ${capitalisedName}</li>
+          <li>Type: ${pokemonType}</li>
         </ul>
-     `;
+      `;
   }
 }
 
