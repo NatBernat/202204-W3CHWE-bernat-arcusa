@@ -1,19 +1,5 @@
 import Component from "./Component.js";
-
-const getPokemon = async (id) => {
-  const pokemonApiEndpoint = "https://pokeapi.co/api/v2/pokemon/";
-  const apiKeyURL = pokemonApiEndpoint + id;
-  const response = await fetch(apiKeyURL);
-
-  const pokemonData = await response.json();
-  return pokemonData;
-};
-
-/* (async () => {
-  const spriteTest = await getPokemon();
-  const testImage = document.querySelector(".img");
-  testImage.src = spriteTest.sprites.front_default;
-})(); */
+import getPokemon from "../getPokemonFunction.js";
 
 class SimplePokemonCard extends Component {
   constructor(parentElement, id) {
@@ -26,17 +12,20 @@ class SimplePokemonCard extends Component {
   async render() {
     const pokemon = await getPokemon(this.id);
     const pokemonName = pokemon.name;
+    const pokemonNameCapitalised = (string) =>
+      string.charAt(0).toUpperCase() + string.slice(1);
+    const capitalisedName = pokemonNameCapitalised(pokemonName);
     const pokemonImage = pokemon.sprites.front_default;
-    const pokemonType = pokemon.types;
+    const pokemonType = pokemon.types[0].type.name;
 
     this.element.innerHTML = `
-      <img src=${pokemonImage} alt="${pokemonName} picture">
-      <ul class="pokemonCard__basic-data>
-        <li>${this.id}</li>
-        <li>${pokemonName}</li>
-        <li>${pokemonType}</li>
-      </ul>
-    `;
+      <img class="pokemonCard" src=${pokemonImage}>
+        <ul>
+          <li>ID: ${this.id}</li>
+          <li>Name: ${capitalisedName}</li>
+          <li>Type: ${pokemonType}</li>
+        </ul>
+      `;
   }
 }
 

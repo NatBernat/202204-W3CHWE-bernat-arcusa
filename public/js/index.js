@@ -1,13 +1,15 @@
 import AppComponent from "./components/AppComponent.js";
+import AllPokemonComponent from "./components/AllPokemonComponent.js";
 import SimplePokemonCard from "./components/SimplePokemonCard.js";
 
 const bodyContainer = document.querySelector("body");
 new AppComponent(bodyContainer);
 
 const mainContainer = bodyContainer.querySelector(".main");
+new AllPokemonComponent(mainContainer);
 
-for (let i = 0; i < 10; i++) {
-  new SimplePokemonCard(mainContainer, i);
+const listContainer = mainContainer.querySelector(".main__list");
+
+for (let i = 1; i < 21; i++) {
+  new SimplePokemonCard(listContainer, i);
 }
-/* new SimplePokemonCard(mainContainer, 6);
-new SimplePokemonCard(mainContainer, 9); */
