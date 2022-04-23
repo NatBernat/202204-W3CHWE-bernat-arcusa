@@ -11,5 +11,7 @@
   - Contains the grid navigation buttons (back, page counter, next)
 - Main 'My pokemon' component:
   - Contains a grid of catched pokemon through and external api to keep it.
-- Detailed pokemon info component:
+  - Each catched pokemon have a delete button
+- Extended Pokemon Card component:
   - Card which contains a detailed info of a selected pokemon from MyPokemon component
+- button

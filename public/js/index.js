@@ -1,22 +1,13 @@
-/* eslint-disable no-new */
 import AppComponent from "./components/AppComponent.js";
+import SimplePokemonCard from "./components/SimplePokemonCard.js";
 
 const bodyContainer = document.querySelector("body");
 new AppComponent(bodyContainer);
 
-const testTag = "pokemon/9";
-const pokemonApiEndpoint = "https://pokeapi.co/api/v2/";
-const apiKeyURL = pokemonApiEndpoint + testTag;
+const mainContainer = bodyContainer.querySelector(".main");
 
-const getPokemon = async () => {
-  const response = await fetch(apiKeyURL);
-
-  const pokemonData = await response.json();
-  return pokemonData;
-};
-
-(async () => {
-  const spriteTest = await getPokemon();
-  const testImage = document.querySelector(".patata");
-  testImage.src = spriteTest.sprites.front_default;
-})();
+for (let i = 0; i < 10; i++) {
+  new SimplePokemonCard(mainContainer, i);
+}
+/* new SimplePokemonCard(mainContainer, 6);
+new SimplePokemonCard(mainContainer, 9); */
