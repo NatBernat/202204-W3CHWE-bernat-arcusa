@@ -17,6 +17,7 @@ class AppComponent extends Component {
     </header>                
       </section>
       <main class="main">
+        <img class="patata">
       </main>
       `;
   }
