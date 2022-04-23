@@ -6,8 +6,6 @@ new AppComponent(bodyContainer);
 
 const mainContainer = bodyContainer.querySelector(".main");
 
-for (let i = 0; i < 10; i++) {
+for (let i = 1; i < 21; i++) {
   new SimplePokemonCard(mainContainer, i);
 }
-/* new SimplePokemonCard(mainContainer, 6);
-new SimplePokemonCard(mainContainer, 9); */
