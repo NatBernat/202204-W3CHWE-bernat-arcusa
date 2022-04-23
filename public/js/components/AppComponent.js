@@ -10,15 +10,13 @@ class AppComponent extends Component {
   render() {
     this.element.innerHTML = `
     <header class="header">
-    <header>
       <h1 title="Pokémon">
         <img src="images/logo.svg" alt="Pokémon logo" />
       </h1>
     </header>                
-      </section>
-      <main class="main">
-      </main>
-      `;
+    <main class="main">
+    </main>
+    `;
   }
 }
 
