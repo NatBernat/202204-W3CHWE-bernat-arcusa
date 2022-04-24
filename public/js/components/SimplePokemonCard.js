@@ -19,9 +19,9 @@ class SimplePokemonCard extends Component {
     const pokemonType = pokemon.types[0].type.name;
 
     this.element.innerHTML = `
-      <img class="pokemonCard" src=${pokemonImage}>
-        <ul>
-          <li>ID: ${this.id}</li>
+    <p>${this.id}</p>  
+    <img class="pokemonCard__image" src=${pokemonImage}>
+        <ul class = "pokemoncard__info">
           <li>Name: ${capitalisedName}</li>
           <li>Type: ${pokemonType}</li>
         </ul>

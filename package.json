@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest –watch all",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "sass-watch": "sass --watch public/scss/style.scss public/css/style.css",
+    "sass-launch": "sass public/scss/style.scss public/css/style.css"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "husky": "^7.0.0",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "sass": "^1.50.1"
   },
   "babel": {
     "env": {
