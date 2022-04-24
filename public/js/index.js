@@ -10,6 +10,6 @@ new AllPokemonComponent(mainContainer);
 
 const listContainer = mainContainer.querySelector(".main__list");
 
-for (let i = 1; i < 21; i++) {
+for (let i = 1; i < 31; i++) {
   new SimplePokemonCard(listContainer, i);
 }
