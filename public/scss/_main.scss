@@ -38,9 +38,39 @@
       font-family: inherit;
       background-color: #ef3e33;
       color: #f1faee;
+      font-size: inherit;
       border-radius: 10px;
-      height: 25px;
-      width: 80px;
+      height: 30px;
+      width: 100px;
+    }
+  }
+  .navigation-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 10px;
+    > * {
+      font-family: inherit;
+      font-size: 125%;
+      height: 50px;
+      padding: 10px;
+      background-color: #ef3e33;
+      color: white;
+      font-weight: bold;
+    }
+    .previous-button {
+      border-radius: 20px 0 0 20px;
+      padding-left: 15px;
+    }
+    .next-button {
+      border-radius: 0 20px 20px 0;
+      padding-right: 15px;
+    }
+    .count-button {
+      background-color: white;
+      color: black;
+      font-weight: normal;
+      cursor: default;
     }
   }
 }

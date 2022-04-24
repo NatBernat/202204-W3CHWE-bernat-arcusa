@@ -14,8 +14,8 @@ class AppComponent extends Component {
         <img src="images/logo.svg" alt="Pokémon logo" />
       </h1>
       <nav class="header__navigation-buttons">
-        <button title="Pokémon list"><a href="index.html">Pokémon list</a></button>
-        <button title="My catched Pokémon"><a href="myCatchedPokemon.html">My Catched Pokémon</a></button>
+        <a href="index.html"><button title="Pokémon list">Pokémon list</button></a>
+        <a href="myCatchedPokemon.html"><button title="My catched Pokémon">My Catched Pokémon</button></a>
       </nav>
     </header>                
     <main class="main">
