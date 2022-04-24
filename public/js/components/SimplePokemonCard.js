@@ -19,16 +19,17 @@ class SimplePokemonCard extends Component {
     let pokemonType;
     pokemonType =
       typeof pokemon.types[1] !== "undefined"
-        ? (pokemonType = `${pokemon.types[0].type.name} ${pokemon.types[1].type.name}`)
+        ? (pokemonType = `${pokemon.types[0].type.name} / ${pokemon.types[1].type.name}`)
         : (pokemonType = pokemon.types[0].type.name);
 
     this.element.innerHTML = `
-    <p>#${this.id}</p>  
-    <img class="pokemonCard__image" src=${pokemonImage} alt="${capitalisedName} picture" title=${capitalisedName}>
+      <p>#${this.id}</p>
+      <img class="pokemonCard__image" src=${pokemonImage} alt="${capitalisedName} picture" title=${capitalisedName}>
         <ul class = "pokemoncard__info">
-          <li>Name: ${capitalisedName}</li>
-          <li>Type: ${pokemonType}</li>
+          <li>${capitalisedName}</li>
+          <li>${pokemonType}</li>
         </ul>
+        <button>Catch it!</button>
       `;
   }
 }
