@@ -13,9 +13,14 @@ class AppComponent extends Component {
       <h1 title="Pokémon">
         <img src="images/logo.svg" alt="Pokémon logo" />
       </h1>
+      <nav class="header__navigation-buttons">
+        <button title="Pokémon list"><a href="index.html">Pokémon list</a></button>
+        <button title="My catched Pokémon"><a href="myCatchedPokemon.html">My Catched Pokémon</a></button>
+      </nav>
     </header>                
     <main class="main">
     </main>
+    <footer class="footer">©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.</footer>
     `;
   }
 }

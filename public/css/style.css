@@ -1,30 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  font-family: "Press Start 2P", cursive;
-  font-size: 0.6em;
-  background-color: #ffcb05;
-  margin: 0;
-}
-
-.container {
-  margin: 0;
-  padding: 0;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 .header {
+  min-height: 175px;
   display: flex;
+  gap: 20px;
   justify-content: center;
   background-color: #ef3e33;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.header__navigation-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header button {
+  min-width: 50vw;
+  /* max-width: 50vw; */
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: inherit;
+  padding: 0;
+}
+.header button a {
+  text-decoration: none;
+  font-family: "VT323", monospace;
+  font-size: 150%;
+  color: white;
 }
 
 .main {
-  width: 100vw;
   justify-content: center;
+  padding: 20px 10px;
 }
 .main__list {
   padding: 0;
@@ -33,15 +41,15 @@ body {
   justify-content: center;
 }
 .main .pokemonCard {
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 270px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  background-color: lightcyan;
+  background-color: #efe6dd;
   border-radius: 15px;
   margin: 10px;
   padding: 10px;
@@ -53,6 +61,47 @@ body {
 }
 .main .pokemonCard > ul {
   list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.main .pokemonCard li:nth-child(1) {
+  font-weight: bold;
+  font-size: 110%;
+}
+.main .pokemonCard button {
+  font-family: inherit;
+  background-color: #ef3e33;
+  color: #f1faee;
+  border-radius: 10px;
+  height: 25px;
+  width: 80px;
+}
+
+.footer {
+  background-color: #ef3e33;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "VT323", monospace;
+  font-size: 120%;
+  background-color: #f3dfa2;
+  min-width: 275px;
+  max-width: 100%;
+}
+body button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0;
   padding: 0;
 }
 

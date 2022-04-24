@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@use "header";
+@use "main";
+@use "footer";
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,52 +9,17 @@
 }
 
 body {
-  font-family: "Press Start 2P", cursive;
-  font-size: 0.6em;
-  background-color: #ffcb05;
-  margin: 0;
+  font-family: "VT323", monospace;
+  font-size: 120%;
+  background-color: #f3dfa2;
+  min-width: 275px;
+  max-width: 100%;
+  button {
+    cursor: pointer;
+  }
 }
 
 .container {
   margin: 0;
   padding: 0;
-}
-.header {
-  display: flex;
-  justify-content: center;
-  background-color: #ef3e33;
-}
-
-.main {
-  width: 100vw;
-  justify-content: center;
-  &__list {
-    padding: 0;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .pokemonCard {
-    width: 200px;
-    height: 200px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    background-color: lightcyan;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 1px 1px 1px 0;
-    &__image {
-      height: 150px;
-      width: 150px;
-    }
-    > ul {
-      list-style-type: none;
-      padding: 0;
-    }
-  }
 }

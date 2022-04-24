@@ -1,0 +1,46 @@
+.main {
+  justify-content: center;
+  padding: 20px 10px;
+  &__list {
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pokemonCard {
+    width: 175px;
+    height: 270px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efe6dd;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 0;
+    &__image {
+      height: 150px;
+      width: 150px;
+    }
+    > ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+    li:nth-child(1) {
+      font-weight: bold;
+      font-size: 110%;
+    }
+    button {
+      font-family: inherit;
+      background-color: #ef3e33;
+      color: #f1faee;
+      border-radius: 10px;
+      height: 25px;
+      width: 80px;
+    }
+  }
+}
