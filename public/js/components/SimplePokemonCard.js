@@ -16,11 +16,10 @@ class SimplePokemonCard extends Component {
       string.charAt(0).toUpperCase() + string.slice(1);
     const capitalisedName = pokemonNameCapitalised(pokemonName);
     const pokemonImage = pokemon.sprites.front_default;
-    let pokemonType;
-    pokemonType =
+    const pokemonType =
       typeof pokemon.types[1] !== "undefined"
-        ? (pokemonType = `${pokemon.types[0].type.name} / ${pokemon.types[1].type.name}`)
-        : (pokemonType = pokemon.types[0].type.name);
+        ? `${pokemon.types[0].type.name} / ${pokemon.types[1].type.name}`
+        : pokemon.types[0].type.name;
 
     this.element.innerHTML = `
       <p>#${this.id}</p>
@@ -29,7 +28,7 @@ class SimplePokemonCard extends Component {
           <li>${capitalisedName}</li>
           <li>${pokemonType}</li>
         </ul>
-        <button>Catch it!</button>
+        <button class="pokemonCard__button">Catch it!</button>
       `;
   }
 }
