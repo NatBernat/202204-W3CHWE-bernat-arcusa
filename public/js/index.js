@@ -1,7 +1,7 @@
 import AppComponent from "./components/AppComponent.js";
 import AllPokemonComponent from "./components/AllPokemonComponent.js";
 import SimplePokemonCard from "./components/SimplePokemonCard.js";
-import ButtonComponent from "./components/ButtonComponent.js";
+import ButtonComponent from "./components/ButtonComponent/ButtonComponent.js";
 import Component from "./components/Component.js";
 
 const bodyContainer = document.querySelector("body");

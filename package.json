@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest –watch all",
+    "test": "jest -–watchAll",
     "prepare": "husky install",
     "sass-watch": "sass --watch public/scss/style.scss public/css/style.css",
     "sass-launch": "sass public/scss/style.scss public/css/style.css"
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
     "@types/jest": "^27.4.1",
     "eslint": "^8.13.0",
     "eslint-config-airbnb-base": "^15.0.0",
